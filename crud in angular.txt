@@ -1,0 +1,21 @@
+GetAll API in Angular==>
+
+step 1=> create a component    	<===============================.
+using "ng g c employee"					        |
+								|
+step 2=> create a service called api-employee			|
+using "ng g s api-employee"					|
+								|
+step 3=> define apiURL in api-Employee.service.ts		|
+apiURL = "Api_url_here"						|
+								|			
+step 4=> Inject Httpclient in api-employee.service.ts		|
+Constructor(private_http:HttpClient){}				|
+								|
+step 5=> create getAll method in api-employee.service.ts	|
+getAll(){							|
+	return this.http.get(this.apiurl);			|
+}								|
+								|
+step 6=> inject api-employee.service.ts file in			|
+employee.component.ts
