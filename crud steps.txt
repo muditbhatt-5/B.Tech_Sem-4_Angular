@@ -1,0 +1,13 @@
+1. create Angular project:
+ng new projectName
+
+2. Create Component:
+ng g c ComponentName
+
+3. Create class And Define Schema:
+ng g class ClassName
+export class className {
+    FeildName:datatype='';
+}
+
+4. 
